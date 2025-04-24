@@ -1,0 +1,349 @@
+/* Reset básico para remover margens e paddings padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Corpo do site */
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+.cabecalho {
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.cabecalho .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo img {
+  width: 150px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu li {
+  padding: 10px 0;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #ff6347; /* Tom de laranja para destaque */
+}
+
+.social-icons a {
+  color: #fff;
+  margin-left: 20px;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ff6347;
+}
+
+/* Carrossel */
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: #ff6347;
+}
+
+/* Seções principais */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+section {
+  margin-bottom: 70px;
+}
+
+.destaque {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.destaque img {
+  width: 45%;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.destaque img:hover {
+  transform: scale(1.05);
+}
+
+.destaque-content {
+  width: 50%;
+}
+
+.destaque h2 {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.destaque p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #ff6347;
+  color: #fff;
+  padding: 15px 25px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #d9534f;
+}
+
+/* Produtos */
+.catalogo {
+  margin-top: 60px;
+}
+
+.catalogo .section-title {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.produtos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.produto-card {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 320px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.produto-card:hover {
+  transform: translateY(-10px);
+}
+
+.produto-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.produto-card .badge {
+  background-color: #ff6347;
+  color: #fff;
+  padding: 8px 15px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.produto-card h3 {
+  font-size: 1.7rem;
+  margin-top: 20px;
+}
+
+.produto-card .precos {
+  margin: 20px 0;
+}
+
+.produto-card .opcao {
+  margin-bottom: 15px;
+}
+
+.produto-card .valor {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.produto-card .parcelamento {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.btn-whatsapp {
+  background-color: #25d366;
+  color: #fff;
+  padding: 12px 22px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  background-color: #128c7e;
+}
+
+/* Formulário de Contato */
+.contato-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contato-form input,
+.contato-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+.contato-form button {
+  background-color: #ff6347;
+  color: #fff;
+  padding: 15px 25px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.contato-form button:hover {
+  background-color: #d9534f;
+}
+
+/* Rodapé */
+.rodape {
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.rodape .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo img {
+  width: 120px;
+}
+
+.footer-links ul {
+  list-style: none;
+  margin: 0;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin: 5px 0;
+}
+
+.footer-links a:hover {
+  color: #ff6347;
+}
+
+/* WhatsApp Flutuante */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #fff;
+  padding: 15px;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  font-size: 1.5rem;
+  z-index: 1000;
+}
+
+.whatsapp-float:hover {
+  background-color: #128c7e;
+}
+/* Estilos do Carrossel */
+.carrossel-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.carrossel-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajuste o tamanho do carrossel conforme necessário */
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Adicione no seu arquivo CSS (App.css ou index.css) */
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
