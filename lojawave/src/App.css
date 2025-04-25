@@ -1,4 +1,3 @@
-/* Reset básico para remover margens e paddings padrão */
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +17,7 @@ body {
 .cabecalho {
   background-color: #1e1e1e;
   color: #fff;
-  padding: 20px 0;
+  padding: 0px 0; /* Reduza o padding para diminuir a altura */
   position: sticky;
   top: 0;
   z-index: 10;
@@ -34,40 +33,53 @@ body {
 }
 
 .logo img {
-  width: 150px;
+  width: 100px; /* Reduza o tamanho da logo */
 }
 
 .menu ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 75px; /* Ajuste o espaçamento entre os itens do menu */
 }
 
 .menu li {
-  padding: 10px 0;
+  padding: 5px 0; /* Reduza o padding dos itens do menu */
 }
 
 .menu a {
+  font-size: 14px; /* Reduza o tamanho da fonte do menu */
   color: #fff;
   text-decoration: none;
-  font-weight: bold;
-  letter-spacing: 1px;
-  transition: color 0.3s ease;
+  transition: color 0.3s;
 }
 
 .menu a:hover {
-  color: #ff6347; /* Tom de laranja para destaque */
+  color: #ffdd57; /* Cor ao passar o mouse */
+}
+
+/* Ícones sociais */
+.social-icons {
+  display: flex; /* Coloca os ícones lado a lado */
+  gap: 10px; /* Espaçamento entre os ícones */
+  align-items: center; /* Alinha os ícones verticalmente */
 }
 
 .social-icons a {
-  color: #fff;
-  margin-left: 20px;
-  font-size: 1.5rem;
-  transition: color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
 }
 
-.social-icons a:hover {
-  color: #ff6347;
+.social-icons img {
+  width: 40px; /* Define a largura do ícone */
+  height: 40px; /* Define a altura do ícone */
+  border-radius: 10%; /* Torna os ícones circulares */
+  transition: transform 0.3s; /* Adiciona uma transição suave */
+}
+
+.social-icons img:hover {
+  transform: scale(1.1); /* Aumenta o tamanho do ícone ao passar o mouse */
 }
 
 /* Carrossel */
@@ -91,54 +103,58 @@ section {
   margin-bottom: 70px;
 }
 
+/* Destaques */
 .destaque {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 40px;
-  margin-bottom: 50px;
-}
-
-.destaque img {
-  width: 45%;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.destaque img:hover {
-  transform: scale(1.05);
+  background-color: #f9f9f9;
+  padding: 50px 20px;
 }
 
 .destaque-content {
-  width: 50%;
+  display: flex; /* Coloca os elementos lado a lado */
+  align-items: center; /* Alinha verticalmente ao centro */
+  justify-content: space-between; /* Espaço entre o texto e a imagem */
+  gap: 20px; /* Espaçamento entre os elementos */
 }
 
-.destaque h2 {
-  font-size: 3rem;
-  color: #333;
+.destaque-texto {
+  flex: 1; /* O texto ocupa 50% do espaço */
+}
+
+.destaque-texto h2 {
+  font-size: 2rem;
   margin-bottom: 20px;
+  color: #333;
 }
 
-.destaque p {
+.destaque-texto p {
   font-size: 1.2rem;
   margin-bottom: 20px;
+  color: #555;
 }
 
-.btn {
-  background-color: #ff6347;
+.destaque-texto .btn {
+  display: inline-block;
+  background-color: #007bff;
   color: #fff;
-  padding: 15px 25px;
-  border: none;
-  text-transform: uppercase;
-  font-weight: bold;
-  cursor: pointer;
+  padding: 10px 20px;
+  text-decoration: none;
   border-radius: 5px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s;
 }
 
-.btn:hover {
-  background-color: #d9534f;
+.destaque-texto .btn:hover {
+  background-color: #0056b3;
+}
+
+.destaque-imagem {
+  flex: 1; /* A imagem ocupa 50% do espaço */
+  text-align: center;
+}
+
+.destaque-imagem img {
+  max-width: 100%; /* A imagem não ultrapassa o tamanho do container */
+  height: auto;
+  border-radius: 10px; /* Bordas arredondadas para a imagem */
 }
 
 /* Produtos */
@@ -343,7 +359,43 @@ section {
   align-items: center;
 }
 
-/* Adicione no seu arquivo CSS (App.css ou index.css) */
-@import "~slick-carousel/slick/slick.css";
-@import "~slick-carousel/slick/slick-theme.css";
+/* Floating Animation */
+.floating {
+  animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Video Section */
+.video-section {
+  width: 100%;
+  height: 100vh; /* Ocupa toda a altura da janela */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.video-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.video-full {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Faz o vídeo preencher a área sem distorção */
+}
+
+
 

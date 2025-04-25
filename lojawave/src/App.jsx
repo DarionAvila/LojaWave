@@ -1,38 +1,7 @@
 import React from 'react';
-import Slider from 'react-slick';
-import './App.css'; // ou o caminho do seu arquivo de estilo CSS
+import './App.css'; // Importando o arquivo CSS
 
-// Componente Carrossel
-export const Carrossel = () => {
-  // Configuração do carrossel
-  const settings = {
-    dots: true, // exibe os pontos de navegação
-    infinite: true, // permite rotação infinita
-    speed: 500, // velocidade da transição entre as imagens
-    slidesToShow: 1, // exibe uma imagem por vez
-    slidesToScroll: 1, // move uma imagem por vez
-    autoplay: true, // ativa a rotação automática
-    autoplaySpeed: 3000, // tempo de transição entre as imagens
-  };
 
-  return (
-    <div className="carrossel-container">
-      <Slider {...settings}>
-        <div>
-          <img src="/image1.jpg" alt="Imagem 1" className="carrossel-img" />
-        </div>
-        <div>
-          <img src="/image2.jpg" alt="Imagem 2" className="carrossel-img" />
-        </div>
-        <div>
-          <img src="/image3.jpg" alt="Imagem 3" className="carrossel-img" />
-        </div>
-      </Slider>
-    </div>
-  );
-};
-
-// Componente principal App
 function App() {
   return (
     <>
@@ -64,20 +33,25 @@ function App() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fab fa-whatsapp"></i>
+              <img src="/whats.png" alt="WhatsApp" className="social-icon" />
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-instagram"></i>
+            <a
+              href="https://www.instagram.com/wave.eletro/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="/insta.png" alt="Instagram" className="social-icon" />
+            </a>
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="/facebook.png" alt="Facebook" className="social-icon" />
             </a>
           </div>
         </div>
       </header>
-
-      <section>
-        <div className="carrossel-container">
-          <Carrossel />
-        </div>
-      </section>
 
       <main className="container">
         <section id="destaques" className="destaque">
@@ -85,18 +59,35 @@ function App() {
             <div className="destaque-texto">
               <h2>iPhone 16 Pro Max</h2>
               <p>
-                O mais avançado iPhone já criado. Tecnologia de ponta em suas
-                mãos.
+                O mais avançado iPhone já criado. Tecnologia de ponta em suas mãos.
               </p>
               <a href="#produtos" className="btn">
                 Conheça os modelos
               </a>
             </div>
-            <img
-              src="/16 pm.png"
-              alt="iPhone 16 Pro Max"
-              className="floating"
-            />
+            <div className="destaque-imagem">
+              <img
+                src="/16 pm.png"
+                alt="iPhone 16 Pro Max"
+                className="floating"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section id="video" className="video-section">
+          <div className="video-container">
+            <video
+              autoPlay
+              muted
+              loop
+              width="100%"
+              height="100%"
+              className="video-full"
+            >
+              <source src="/videos/demo-video.mp4" type="video/mp4" />
+              Seu navegador não suporta o elemento de vídeo.
+            </video>
           </div>
         </section>
 
@@ -193,10 +184,11 @@ function App() {
             <h4>Links Rápidos</h4>
             <ul>
               <li>
-                <a href="#destaques">Destaques</a>
+                <a href="https://www.instagram.com/wave.eletro/">Instagran</a>
+                <img src="/whats.png" alt="" />
               </li>
               <li>
-                <a href="#produtos">Produtos</a>
+                <a href="https://wa.me/53999457884?text=Olá">WhatsApp</a>
               </li>
               <li>
                 <a href="#contato">Contato</a>
@@ -233,8 +225,5 @@ function App() {
   );
 }
 
-
 export default App;
 
-// Exportando Carrossel como exportação nomeada
-// export { Carrossel };
