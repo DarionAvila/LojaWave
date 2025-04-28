@@ -53,7 +53,7 @@ function App() {
         </div>
       </header>
 
-      <main className="container">
+      <main className="container ">
         <section id="destaques" className="destaque">
           <div className="destaque-content">
             <div className="destaque-texto">
@@ -172,6 +172,169 @@ function App() {
               </a>
             </div>
           </div>
+          <div className="produtos-grid">
+            <div className="produto-card">
+              <div className="badge">Lançamento</div>
+              <img src="/16 pm.png" alt="iPhone 16 Pro Max" />
+              <h3>iPhone 16 Pro Max</h3>
+              <div className="precos">
+                <div className="opcao">
+                  <span className="capacidade">256GB</span>
+                  <span className="valor">R$ 9.900,00</span>
+                  <span className="parcelamento">ou 12x de R$ 910,00</span>
+                </div>
+                <div className="opcao">
+                  <span className="capacidade">512GB</span>
+                  <span className="valor">R$ 12.000,00</span>
+                  <span className="parcelamento">ou 12x de R$ 1.100,00</span>
+                </div>
+              </div>
+              <a
+                href="https://wa.me/53999457884?text=Olá, gostaria de comprar o iPhone 16 Pro Max"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-whatsapp"
+              >
+                <i className="fab fa-whatsapp"></i> Comprar agora
+              </a>
+            </div>
+
+            <div className="produto-card">
+              <div className="badge">Lançamento</div>
+              <img src="/16 pm.png" alt="iPhone 16 Pro" />
+              <h3>iPhone 16 Pro</h3>
+              <div className="precos">
+                <div className="opcao">
+                  <span className="capacidade">128GB</span>
+                  <span className="valor">R$ 8.500,00</span>
+                  <span className="parcelamento">ou 12x de R$ 794,00</span>
+                </div>
+                <div className="opcao">
+                  <span className="capacidade">256GB</span>
+                  <span className="valor">R$ 8.900,00</span>
+                  <span className="parcelamento">ou 12x de R$ 830,00</span>
+                </div>
+              </div>
+              <a
+                href="https://wa.me/53999457884?text=Olá, gostaria de comprar o iPhone 16 Pro"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-whatsapp"
+              >
+                <i className="fab fa-whatsapp"></i> Comprar agora
+              </a>
+            </div>
+
+            <div className="produto-card">
+              <div className="badge">Lançamento</div>
+              <img src="/Iphone16.png" alt="iPhone 16" />
+              <h3>iPhone 16</h3>
+              <div className="precos">
+                <div className="opcao">
+                  <span className="capacidade">128GB</span>
+                  <span className="valor">R$ 6.700,00</span>
+                  <span className="parcelamento">ou 12x de R$ 625,00</span>
+                </div>
+                <div className="opcao">
+                  <span className="capacidade">256GB</span>
+                  <span className="valor">R$ 7.400,00</span>
+                  <span className="parcelamento">ou 12x de R$ 690,00</span>
+                </div>
+              </div>
+              <a
+                href="https://wa.me/53999457884?text=Olá, gostaria de comprar o iPhone 16"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-whatsapp"
+              >
+                <i className="fab fa-whatsapp"></i> Comprar agora
+              </a>
+            </div>
+          </div>
+          <div className="produtos-grid">
+            <div className="produto-card">
+              <div className="badge">Lançamento</div>
+              <img src="/16 pm.png" alt="iPhone 16 Pro Max" />
+              <h3>iPhone 16 Pro Max</h3>
+              <div className="precos">
+                <div className="opcao">
+                  <span className="capacidade">256GB</span>
+                  <span className="valor">R$ 9.900,00</span>
+                  <span className="parcelamento">ou 12x de R$ 910,00</span>
+                </div>
+                <div className="opcao">
+                  <span className="capacidade">512GB</span>
+                  <span className="valor">R$ 12.000,00</span>
+                  <span className="parcelamento">ou 12x de R$ 1.100,00</span>
+                </div>
+              </div>
+              <a
+                href="https://wa.me/53999457884?text=Olá, gostaria de comprar o iPhone 16 Pro Max"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-whatsapp"
+              >
+                <i className="fab fa-whatsapp"></i> Comprar agora
+              </a>
+            </div>
+
+            <div className="produto-card">
+              <div className="badge">Lançamento</div>
+              <img src="/16 pm.png" alt="iPhone 16 Pro" />
+              <h3>iPhone 16 Pro</h3>
+              <div className="precos">
+                <div className="opcao">
+                  <span className="capacidade">128GB</span>
+                  <span className="valor">R$ 8.500,00</span>
+                  <span className="parcelamento">ou 12x de R$ 794,00</span>
+                </div>
+                <div className="opcao">
+                  <span className="capacidade">256GB</span>
+                  <span className="valor">R$ 8.900,00</span>
+                  <span className="parcelamento">ou 12x de R$ 830,00</span>
+                </div>
+              </div>
+              <a
+                href="https://wa.me/53999457884?text=Olá, gostaria de comprar o iPhone 16 Pro"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-whatsapp"
+              >
+                <i className="fab fa-whatsapp"></i> Comprar agora
+              </a>
+            </div>
+
+            <div className="produto-card">
+              <div className="badge">Lançamento</div>
+              <img src="/Iphone16.png" alt="iPhone 16" />
+              <h3>iPhone 16</h3>
+              <div className="precos">
+                <div className="opcao">
+                  <span className="capacidade">128GB</span>
+                  <span className="valor">R$ 6.700,00</span>
+                  <span className="parcelamento">ou 12x de R$ 625,00</span>
+                </div>
+                <div className="opcao">
+                  <span className="capacidade">256GB</span>
+                  <span className="valor">R$ 7.400,00</span>
+                  <span className="parcelamento">ou 12x de R$ 690,00</span>
+                </div>
+              </div>
+              <a
+                href="https://wa.me/53999457884?text=Olá, gostaria de comprar o iPhone 16"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-whatsapp"
+              >
+                <i className="fab fa-whatsapp"></i> Comprar agora
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="section-title">Localização</h2>
+          
         </section>
       </main>
 
@@ -219,7 +382,11 @@ function App() {
         rel="noopener noreferrer"
         className="whatsapp-float"
       >
-        <i className="fab fa-whatsapp"></i>
+        <img
+          src="/whats.png"
+          alt="WhatsApp"
+          className="whatsapp-icon"
+        />
       </a>
     </>
   );
