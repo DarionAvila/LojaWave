@@ -4,55 +4,43 @@ import './App.css'; // Importando o arquivo CSS
 function App() {
   return (
     <>
-      <header className="bg-gray-900 text-white sticky top-0 z-10 py-2">
-        <div className="container mx-auto flex justify-between items-center px-4">
-          <div className="logo">
-            <img
-              src="/wavelogo.png"
-              alt="Wave Eletrônicos"
-              className="w-24"
-            />
-          </div>
-          <nav className="menu">
-            <ul className="flex space-x-8">
+
+
+      <nav class="border-gray-200 dark:bg-gray-900">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="/wavelogo.png" class="h-40" alt="Flowbite Logo" />
+            <span class="self-center text-2xl font-semibold whitespace-nowrap text-white"></span>
+          </a>
+          <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w- h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 text-white">
               <li>
-                <a href="#destaques" className="text-sm hover:text-yellow-400">Destaques</a>
+                <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-white md:p-0 dark:text-white md:dark:text-white" aria-current="page">Home</a>
               </li>
               <li>
-                <a href="#produtos" className="text-sm hover:text-yellow-400">Produtos</a>
+                <a href="#" class="block py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
               </li>
               <li>
-                <a href="#contato" className="text-sm hover:text-yellow-400">Contato</a>
+                <a href="#" class="block py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
               </li>
             </ul>
-          </nav>
-          <div className="social-icons flex space-x-4">
-            <a
-              href="https://wa.me/53999457884"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="/whats.png" alt="WhatsApp" className="w-8" />
-            </a>
-            <a
-              href="https://www.instagram.com/wave.eletro/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="/insta.png" alt="Instagram" className="w-8" />
-            </a>
-            <a
-              href="https://www.facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="/facebook.png" alt="Facebook" className="w-8" />
-            </a>
           </div>
         </div>
-      </header>
+      </nav>
 
-      <main className="container mx-auto p-6">
+      <main className="container mx-auto ">
         <section id="destaques" className="my-12">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="destaque-texto text-center md:text-left">
@@ -62,7 +50,7 @@ function App() {
               </p>
               <a
                 href="#produtos"
-                className="btn mt-6 inline-block px-8 py-3 bg-blue-700 text-white rounded-lg text-xl font-semibold hover:bg-yellow-500 transition-all"
+                className="btn mt-6 inline-block px-8 py-3 bg-blue-700 text-white rounded-lg text-xl font-semibold hover:bg-blue-900 transition-all"
               >
                 Conheça os modelos
               </a>
@@ -127,7 +115,7 @@ function App() {
               </div>
             </div>
 
-            
+
             <div className="produto-card bg-white p-6 rounded-xl shadow-xl transition-transform transform hover:scale-105">
               <img
                 src="/16 pm.png"
@@ -279,17 +267,10 @@ function App() {
                 </a>
               </div>
             </div>
-
-            
-
-
-            {/* Replicar para outros produtos */}
-            
           </div>
         </section>
       </main>
-
-      <footer className="bg-gray-900 text-white py-6">
+      {/* <footer className="bg-gray-900 text-white py-6">
         <div className="container mx-auto flex justify-between">
           <div className="footer-logo">
             <img src="/logo2.png" alt="Wave Eletrônicos" className="w-32" />
@@ -336,7 +317,37 @@ function App() {
         <div className="copyright text-center mt-6">
           <p>&copy; 2023 Wave Eletrônicos. Todos os direitos reservados.</p>
         </div>
+      </footer> */}
+
+
+      <footer class=" rounded-lg shadow-sm dark:bg-gray-900 m-4">
+        <div class="w-full max-w mx-auto p-4 md:py-8">
+          <div class="sm:flex sm:items-center sm:justify-between">
+            <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+              <img src="/wavelogo.png" class="h-8" alt="Flowbite Logo" />
+              <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Wave Imports</span>
+            </a>
+            <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-white sm:mb-0 dark:text-gray-400">
+              <li>
+                <a href="#" class="hover:underline me-4 md:me-6">About</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <hr class="my-6 border-gray-700 sm:mx-auto dark:border-gray-700 lg:my-8" />
+          <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://www.instagram.com/wave.eletro/" class="hover:underline">Wave™</a>&copy;  Todos os direitos reservados.</span>
+        </div>
       </footer>
+
+
 
       <a
         href="https://wa.me/53999457884"
